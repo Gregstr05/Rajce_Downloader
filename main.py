@@ -6,12 +6,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-print('Trying')
 
 DRIVER_PATH = 'chromedriver.exe'
 driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-print('still trying')
-driver.get('Input url of first image')
+driver.get(input("URL of a first photo: "))
 
 sleep(25)
 
