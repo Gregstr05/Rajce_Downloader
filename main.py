@@ -10,6 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 DRIVER_PATH = 'chromedriver.exe'
 driver = webdriver.Chrome(executable_path=DRIVER_PATH)
 driver.get(input("URL of a first photo: "))
+x = input('Enter number of images to be downloaded: ')
 
 sleep(25)
 
@@ -17,7 +18,7 @@ print('Still trying and not failing')
 
 i = 0
 
-for i in range(687):
+for i in range(x):
     print(i)
     try:
         print("tried xd")
