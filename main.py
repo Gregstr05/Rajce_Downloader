@@ -18,7 +18,7 @@ print('Still trying and not failing')
 
 i = 0
 
-for i in range(x):
+for i in range(int(x)):
     print(i)
     try:
         print("tried xd")
